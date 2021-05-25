@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-snap-type: y mandatory;
+}
+
+.child {
+    scroll-snap-align: start;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+#tab-intro {
+    background: linear-gradient(to left, #eaafc8, rgb(55, 147, 227));
+    height: calc(100vh - 100px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 15%;
+    color: #fdeff9;
+    margin-bottom: -1px;
+}
+
+#tab-intro h1 {
+    font-weight: 700;
+    font-size: 8vw;
+}
+
+#tab-timeline {
+    /* margin-top: -300px; */
+    text-align: left;
+    padding: 0 15%;
+    color: gray;
+}
+
+#tab-timeline .row {
+    min-height: 200px;
+}
+
+#tab-timeline h1 {
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+#tab-projects {
+    text-align: left;
+    padding: 0 15%;
+    color: gray;
+    margin-top: 100px;
+}
+
+#tab-projects h1 {
+    font-weight: 700;
+    font-size: 4vw;
+}
